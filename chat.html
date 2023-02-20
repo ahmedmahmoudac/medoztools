@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatGPT Example</title>
+	<style>
+		/* Add your custom CSS here */
+		#chat-window {
+			height: 400px;
+			overflow: auto;
+			border: 1px solid black;
+			padding: 10px;
+		}
+
+		.message {
+			margin-bottom: 10px;
+		}
+
+		.message strong {
+			margin-right: 10px;
+		}
+
+		.user-message {
+			color: blue;
+		}
+
+		.bot-message {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="chat-window"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@openai/chat-api@0.4.4/build/chat.min.js"></script>
+	<script>
+		const chatClient = new window.OpenAIChat.default({
+		  agentId: "17030016",
+		  apiKey: "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",
+		  onInit: function() {
+		    chatClient.open();
+		  }
+		});
+
+		chatClient.on("Message", function(data) {
+		  const { speaker, text } = data.message;
+		  const chatWindow = document.getElementById("chat-window");
+		  const messageNode = document.createElement("div");
+		  messageNode.classList.add("message");
+		  if (speaker === "user") {
+		    messageNode.classList.add("user-message");
+		  } else {
+		    messageNode.classList.add("bot-message");
+		  }
+		  messageNode.innerHTML = `<strong>${speaker}:</strong> ${text}`;
+		  chatWindow.appendChild(messageNode);
+		});
+
+		chatClient.on("Error", function(data) {
+		  console.error(data);
+		});
+	</script>
+</body>
+</html>
