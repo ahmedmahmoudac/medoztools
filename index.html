@@ -1,0 +1,351 @@
+<html lang="en"><head><style type="text/css" data-tag-name="trix-editor">trix-editor {
+  display: block;
+}
+
+trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+  cursor: text;
+  pointer-events: none;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
+  content: attr(data-trix-placeholder);
+  color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+  display: inline-block !important;
+  width: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+  vertical-align: top !important;
+  margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+  vertical-align: bottom !important;
+  margin-right: -1px !important;
+}</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  display: block;
+}
+
+trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar [data-trix-dialog] {
+  display: none;
+}
+
+trix-toolbar [data-trix-dialog][data-trix-active] {
+  display: block;
+}
+
+trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
+  background-color: #ffdddd;
+}</style><style type="text/css" data-tag-name="trix-editor">trix-editor {
+  display: block;
+}
+
+trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+  cursor: text;
+  pointer-events: none;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
+  content: attr(data-trix-placeholder);
+  color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+  display: inline-block !important;
+  width: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+  vertical-align: top !important;
+  margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+  vertical-align: bottom !important;
+  margin-right: -1px !important;
+}</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  display: block;
+}
+
+trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar [data-trix-dialog] {
+  display: none;
+}
+
+trix-toolbar [data-trix-dialog][data-trix-active] {
+  display: block;
+}
+
+trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
+  background-color: #ffdddd;
+}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="DKAysD4fZFsJV6yb4kn06HJLosDXAt2XbT3O6th0">
+<title>UID Checker - Medoz Pro</title>
+
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=Inter:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/ahmedmahmoudac/medoztools/main/MedozPro.png" type="image/x-icon">
+<style>
+    [x-cloak] {
+        display: none !important
+    }
+</style>
+
+<link rel="preload" as="style" href="/build/assets/app-de796815.css"><link rel="modulepreload" href="/build/assets/app-581aac95.js"><link rel="stylesheet" href="/build/assets/app-de796815.css"><script type="module" src="/build/assets/app-581aac95.js"></script>
+<style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+<script src="/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false" type="text/javascript"></script><script data-turbo-eval="false" data-turbolinks-eval="false" type="text/javascript">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'DKAysD4fZFsJV6yb4kn06HJLosDXAt2XbT3O6th0';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+</head>
+<body class="font-sans antialiased">
+<div class="flex h-screen overflow-hidden bg-gray-100" x-data="{ sidebarToggle: false }">
+
+<aside :class="{ '-translate-x-full': !sidebarToggle }" class="absolute top-0 left-0 z-30 flex flex-col h-screen overflow-y-hidden text-gray-600 duration-200 ease-in-out bg-white shadow-sm w-72 lg:translate-x-0 lg:static -translate-x-full">
+
+<img alt="Logo" src="https://raw.githubusercontent.com/ahmedmahmoudac/medoztools/main/MedozPro.png">
+
+<nav class="flex-1 px-4 overflow-y-auto scrollbar-y">
+
+<ul class="mt-6 space-y-2">
+
+<li class="px-4 mb-2 text-xs font-semibold tracking-widest text-teal-600 uppercase">
+</li>
+
+<li>
+<a href="https://medoz.trendatelyoum.com" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+<path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+<path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+</svg> Home
+</span>
+</a>
+</li>
+</ul>
+<ul class="mt-6 space-y-2">
+
+<li class="px-4 mb-2 text-xs font-semibold tracking-widest text-teal-600 uppercase">
+Medoz Sites
+</li>
+
+
+<a href="https://medoztools.trendatelyoum.com/" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+<path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
+</svg> Medoz Tools &amp; Extentions
+</span>
+</a>
+
+<li>
+<a href="https://medoz.trendatelyoum.com/" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+<path d="M16 11h6m-3 -3v6"></path>
+</svg> Medoz Generators
+</span>
+</a>
+</li>
+</ul>
+<ul class="mt-6 space-y-2">
+
+<li class="px-4 mb-2 text-xs font-semibold tracking-widest text-teal-600 uppercase">
+Tools
+</li>
+
+
+<li>
+<a href="https://onlinenotes.trendatelyoum.com/" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+<path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
+</svg> Online Notes By Medoz
+</span>
+</a>
+</li>
+<li>
+<a href="https://upload.trendatelyoum.com/" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+<path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
+</svg> File Upload By Medoz
+</span>
+</a>
+</li><a href="https://cookies.trendatelyoum.com/" class="flex items-center px-4 py-2 rounded-md hover:bg-teal-600 hover:text-white justify-between bg-teal-600 text-white">
+<span class="flex items-center">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+</svg> Fb UID Checker
+</span>
+</a>
+
+</ul>
+</nav>
+</aside>
+
+<div x-show="sidebarToggle" x-transition:enter="transition ease-in-out duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-on:click="sidebarToggle = false" class="fixed inset-0 z-10 bg-gray-900 bg-opacity-30 backdrop-blur-[2px]" style="display: none;"></div>
+
+<div class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto">
+
+<header class="top-0 flex w-full bg-white shadow-sm">
+<div class="flex items-center justify-between flex-grow p-4 mx-auto md:px-8 lg:px-10 max-w-screen-2xl">
+<div class="flex items-center gap-2 sm:gap-4 lg:hidden">
+
+<button x-on:click="sidebarToggle = true" class="lg:hidden">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 6l16 0"></path>
+<path d="M4 12l16 0"></path>
+<path d="M4 18l16 0"></path>
+</svg> </button>
+
+<img alt="Logo" src="https://raw.githubusercontent.com/ahmedmahmoudac/medoztools/main/MedozPro.png">
+</div>
+
+<div class="ml-auto lg:ml-0">
+</div>
+<div class="flex items-center gap-3 lg:ml-auto">
+</div>
+</div>
+</header>
+
+<main class="w-full h-full">
+<div class="p-4 mx-auto text-gray-800 max-w-screen-2xl md:p-8 lg:p-10">
+
+<div class="flex items-center justify-between mb-4">
+<h1 class="text-xl font-bold">Facebook UID Checker</h1>
+</div>
+
+<div wire:id="S2H9TJhun9BWNa5tVoYf" class="p-5 bg-white shadow rounded-xl" x-data="uidChecker">
+<div>
+<label class="block font-medium text-sm text-gray-700" for="uid">
+Enter UID (Each UID in new line) <span class="text-red-500">*</span>
+</label>
+<textarea id="uid" rows="6" x-model="uids" class="w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500"></textarea>
+</div>
+<div class="mt-6">
+<button class="inline-flex items-center px-4 py-2 rounded-md font-medium text-sm tracking-wide disabled:opacity-25
+transition ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 bg-teal-600 text-white hover:bg-teal-700 focus:ring-teal-500 active:bg-teal-800" type="button" @click="check" :disabled="loading">
+<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 4v16l13 -8z"></path>
+</svg> Check
+</button>
+</div>
+<div class="grid gap-4 mt-8 md:grid-cols-2">
+<div>
+<label for="live" class="flex items-center justify-between text-sm font-medium text-success-600">
+<div>
+Live accounts
+<span class="text-gray-700" x-text="live_count"></span>
+</div>
+<button class="inline-flex items-center px-4 py-2 rounded-md font-medium text-sm tracking-wide disabled:opacity-25
+transition ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 bg-teal-100 text-teal-700 hover:bg-teal-200 focus:ring-teal-500 active:bg-teal-300" type="button" data-clipboard-target="#live">
+Copy
+</button>
+</label>
+<textarea id="live" rows="6" x-model="live" readonly="" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.select()" class="w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500"></textarea>
+</div>
+<div>
+<label for="dead" class="flex items-center justify-between text-sm font-medium text-danger-600">
+<div>
+Dead accounts
+<span class="text-gray-700" x-text="dead_count"></span>
+</div>
+<button class="inline-flex items-center px-4 py-2 rounded-md font-medium text-sm tracking-wide disabled:opacity-25
+transition ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 bg-teal-100 text-teal-700 hover:bg-teal-200 focus:ring-teal-500 active:bg-teal-300" type="button" data-clipboard-target="#dead">
+Copy
+</button>
+</label>
+<textarea id="dead" rows="6" x-model="dead" readonly="" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.select()" class="w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500"></textarea>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+</div>
+</div>
+
+
+<script src="/js/clipboard.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        const btns = new ClipboardJS("button[data-clipboard-target]");
+        btns.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.textContent = 'Copied';
+            setTimeout(() => {
+                e.trigger.textContent = 'Copy';
+            }, 1000);
+        });
+    </script>
+<div wire:id="wnqqH8J97Yz5ccY62HQJ">
+<div class="filament-notifications pointer-events-none fixed inset-4 z-50 mx-auto flex gap-3 items-end flex-col-reverse justify-end" role="status">
+</div>
+</div>
+
+
+
+</body></html>
